@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf=8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Validation Form</title>
+    <link rel="stylesheet" href="main.css">
+    <style>
+        #loginStatus{
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="Index.HTML">Home</a><br>
+            <a href="boards.html">Boards</a><br>
+            <a href="game.html">Game</a><br>
+            <a href="strings.html">Input Validation</a>
+        </nav>
+
+    </header>
+    <h1>Input Validation</h1>
+
+    <h2>Please log in to continue:</h2>
+    <div id="loginStatus"></div>
+    <br>
+    <br>
+    <!-- html form allows us to enter information and do something with it (under assumption that we have server set up-->
+    <form method="post" onsubmit="return validateForm();">
+        <!--Set up a label and textbox to get user's first and last name-->
+        <label for="fName">First Name:</label>
+        <input type="text" id="fName" name="fName"><br>
+        <label for="lName">Last Name:</label>
+        <input type="text" id="lName" name="lName">
+        <br>
+        <label for="zip">Zip Code:</label>
+        <input type="number" id="zip" name="zip">
+        <br>
+        <input type="submit" value="submit">
+    </form>
+    <!--Add Javascript code in between script tags-->
+    <script src="code.js">
+
+    </script>
+
+
+</body>
+
+</html>

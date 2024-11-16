@@ -1,0 +1,31 @@
+body{
+    background-color: dodgerblue;
+    color: blanchedalmond;
+    width: 100%;
+}
+
+nav{
+    height: 600px;
+    width: 200px;
+    float: left;
+    padding: 5px;
+    line-height: 30px;
+}
+
+footer{
+    background-color:chocolate;
+    text-align: center;
+    margin-right: 200px;
+}
+
+#memeImage{
+    position: absolute; /* this will allow us to move the image around */
+    margin-right: 200px;
+    width: 350px;
+    
+}
+
+p{
+    width: 100%;
+    text-align: center;
+}
